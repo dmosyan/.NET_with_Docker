@@ -11,3 +11,5 @@
 ### create certificate manually
 ``` dotnet dev-certs https -ep $env:USERPROFILE\.aspnet\WeatherAPI.pfx -p pa55s0rd! ```
 ``` dotnet dev-certs https --trust ```
+### add user secret
+``` dotnet user-secrets set "Kestrel:Certificates:Development:Password" "pa55s0rd!" ```
