@@ -16,3 +16,6 @@
 
 ### configure https for container
 ``` docker run -p 8080:80 -p 8081:443 -e ASPNETCORE_URLS="https://+;http://+" -e ASPNETCORE_HTTPS_PORT=8081 -e ASPNETCORE_ENVIRONMENT=Development -v $env:APPDATA\Microsoft\UserSecrets\:/root/.microsoft/usersecrets -v $env:USERPROFILE\.aspnet:/root/.aspnet/https/ weatherapi ```
+
+### after adding docker compose file run
+``` docker-compose up --build ```
